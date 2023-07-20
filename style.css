@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+.container {
+  width: 120rem;
+  margin: 0 auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.8rem 1.6rem;
+}
+
+.logo {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: -3px;
+  color: #eb3a64;
+}
+.nav-items {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  font-size: 1.6rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.links:link,
+.links:visited {
+  text-decoration: none;
+  color: #222;
+  transition: all 0.3s;
+}
+
+.nav-links:hover,
+.nav-links:active {
+  color: #eb3a64;
+}
