@@ -11,7 +11,22 @@ color
 - background color #1b1e28;
 - btn accent color #1bb896
 - text accent color #50e9c8
+- hover color #0e876d
+- description text #d1d5db
 - card color #1f2937
+
+*/
+
+/*
+Helper class
+*/
+
+.pt-34 {
+  padding-top: 4.2rem;
+}
+
+/*
+CSS
 */
 
 * {
@@ -31,8 +46,9 @@ body {
 }
 
 .container {
-  width: 80rem;
+  width: 80em;
   margin: 0 auto;
+  padding: 0 1.6rem;
 }
 
 header {
@@ -64,4 +80,81 @@ header {
 .nav-links:hover,
 .nav-links:active {
   color: #50e9c8;
+}
+
+/*
+Hero Image
+*/
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  /* align-items: center; */
+}
+
+.hero-img-box {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-img {
+  width: 220px;
+  height: 220px;
+}
+
+/* hero-texts */
+.hero-title {
+  font-family: "Lora", serif;
+  font-size: 3.2rem;
+}
+
+.hero-description {
+  margin-top: 1.2rem;
+  font-size: 1.8rem;
+  /* letter-spacing: 1.2px; */
+  line-height: 1.8;
+  color: #d1d5db;
+}
+
+.highlighted-text {
+  color: #50e9c8;
+}
+
+/*
+Social links
+*/
+
+.social-links {
+  margin-top: 1.8rem;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-link:link,
+.icon-link:visited {
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.social-icons {
+  width: 40px;
+  height: 40px;
+  transition: all 0.3s;
+}
+
+.icon-link svg path {
+  fill: #d1d5db;
+}
+
+.icon-link:hover svg path {
+  fill: #0e876d;
+}
+
+@media (max-width: 50em) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
 }
