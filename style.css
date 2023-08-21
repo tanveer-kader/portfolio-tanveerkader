@@ -18,11 +18,22 @@ color
 */
 
 /*
-Helper class
+Global
 */
 
 .pt-34 {
   padding-top: 4.2rem;
+}
+
+.section-title {
+  font-family: "Lora", serif;
+  font-size: 3.2rem;
+  margin-bottom: 3.2rem;
+  text-align: center;
+}
+
+.section-gap {
+  padding-top: 6.4rem;
 }
 
 /*
@@ -48,7 +59,9 @@ body {
 .container {
   width: 80em;
   margin: 0 auto;
-  padding: 0 1.6rem;
+  /* padding: 0 1.6rem; */
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
 }
 
 header {
@@ -155,13 +168,6 @@ Social links
 
 /* techstack cards */
 
-.section-title {
-  font-family: "Lora", serif;
-  font-size: 3.2rem;
-  margin-bottom: 3.2rem;
-  text-align: center;
-}
-
 .tech-stack-cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -202,9 +208,70 @@ Social links
   height: 25px;
 }
 
+/* BLOG */
+
+.blog {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  border-top: 0.02px solid rgba(156, 163, 175, 0.308);
+  padding: 4.2rem 0;
+}
+
+.blog-timedate {
+  font-size: 1.8rem;
+  padding-top: 0.8rem;
+  color: #9ca3af;
+}
+
+.blog-texts {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.blog-title {
+  font-family: "Lora", serif;
+  font-size: 2.8rem;
+  letter-spacing: 0.5px;
+}
+
+.blog-title-link:link,
+.blog-title-link:visited {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s;
+}
+
+.blog-title-link:hover,
+.blog-title-link:active {
+  color: #0e876d;
+}
+
+.blog-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  color: #d1d5db;
+}
+
+.blog-link:link,
+.blog-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #50e9c8;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+
+.blog-link:hover,
+.blog-link:active {
+  color: #0e876d;
+}
+
 @media (max-width: 50em) {
   .hero,
-  .tech-stack-cards {
+  .tech-stack-cards,
+  .blog {
     grid-template-columns: 1fr;
   }
 }
