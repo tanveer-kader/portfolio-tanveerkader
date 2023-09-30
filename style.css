@@ -41,24 +41,28 @@ body {
 .container {
   max-width: 80rem;
   margin: 0 auto;
-  /* padding: 0 1.6rem; */
-  padding-left: 1.6rem;
-  padding-right: 1.6rem;
+  padding: 0 1.6rem;
 }
 
 .header {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 8rem;
-  /* padding: 3.2rem 0; */
+  /* height: 8rem; */
+  padding: 3.2rem 0;
   display: flex;
   justify-content: center;
   z-index: 999;
-  backdrop-filter: blur(8px);
-
+  -webkit-backdrop-filter: blur(9px);
+  backdrop-filter: blur(9px);
+  background-color: rgba(27, 30, 40, 0.4);
+  /* border-bottom: 0.02px solid rgba(255, 255, 255, 0.03); */
   /* box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03); */
-  /* border-bottom: 0.02px solid rgba(156, 163, 175, 0.05); */
+}
+
+.nav-scroll {
+  padding: 2.4rem 0;
+  border-bottom: 0.05px solid rgba(255, 255, 255, 0.07);
 }
 
 .navbar {
@@ -94,7 +98,6 @@ body {
   border: none;
   background: none;
   cursor: pointer;
-
   display: none;
 }
 
@@ -416,7 +419,9 @@ Social links
   .card-project {
     grid-template-columns: 1fr;
   }
-
+  .header {
+    padding: 0.8rem 0;
+  }
   /* MOBILE Navigation */
   .btn-mobile-nav {
     display: block;
@@ -424,10 +429,7 @@ Social links
   }
 
   .navbar {
-    /* background-color: rgba(255, 255, 255, 0.9); */
-    background-color: #1f2937;
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
+    background-color: #1b1e28;
     position: absolute;
     top: 0;
     left: 0;
