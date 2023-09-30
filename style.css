@@ -55,10 +55,11 @@ body {
   display: flex;
   justify-content: center;
   z-index: 999;
+  -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
-
+  /* background-color: rgba(34, 38, 50, 0.6); */
+  /* border-bottom: 0.02px solid rgba(255, 255, 255, 0.03); */
   /* box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03); */
-  /* border-bottom: 0.02px solid rgba(156, 163, 175, 0.05); */
 }
 
 .navbar {
@@ -94,7 +95,6 @@ body {
   border: none;
   background: none;
   cursor: pointer;
-
   display: none;
 }
 
@@ -424,10 +424,7 @@ Social links
   }
 
   .navbar {
-    /* background-color: rgba(255, 255, 255, 0.9); */
-    background-color: #1f2937;
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
+    background-color: #1b1e28;
     position: absolute;
     top: 0;
     left: 0;

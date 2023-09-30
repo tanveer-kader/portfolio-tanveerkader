@@ -8,10 +8,15 @@ yearEl.innerHTML = `&copy; ${currentYear}`;
 // make mobile navigation work
 const btnNavEl = document.querySelector(".btn-mobile-nav");
 const navbarEl = document.querySelector(".header");
+const navlinksEL = document.querySelector(".nav-links");
 
 btnNavEl.addEventListener("click", function () {
   navbarEl.classList.toggle("nav-open");
 });
+
+// navlinksEL.addEventListener("click", function () {
+//   navbarEl.classList.remove("nav-open");
+// });
 
 ///////////////////////////////////////////////////////////
 // sticky navigation
