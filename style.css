@@ -419,6 +419,11 @@ Social links
   .card-project {
     grid-template-columns: 1fr;
   }
+
+  .first-section-margin {
+    margin-top: 3.2rem;
+  }
+
   .header {
     padding: 0.8rem 0;
   }
