@@ -8,15 +8,35 @@ yearEl.innerHTML = `&copy; ${currentYear}`;
 // make mobile navigation work
 const btnNavEl = document.querySelector(".btn-mobile-nav");
 const navbarEl = document.querySelector(".header");
-const navlinksEL = document.querySelector(".nav-links");
+const navlinksEL = document.querySelectorAll(".nav-links");
 
 btnNavEl.addEventListener("click", function () {
   navbarEl.classList.toggle("nav-open");
 });
 
-// navlinksEL.addEventListener("click", function () {
-//   navbarEl.classList.remove("nav-open");
-// });
+navlinksEL.forEach((navlink) => {
+  navlink.addEventListener("click", () => {
+    console.log("cilck");
+    navbarEl.classList.remove("nav-open");
+  });
+});
+
+///////////////////////////////////////////////////////////
+// add border bottom on scroll navigation
+const header = document.querySelector(".header");
+const sticky = header.offsetTop;
+
+window.onscroll = function () {
+  addborder();
+};
+
+function addborder() {
+  if (window.scrollY > sticky) {
+    header.classList.add("nav-scroll");
+  } else {
+    header.classList.remove("nav-scroll");
+  }
+}
 
 ///////////////////////////////////////////////////////////
 // sticky navigation
