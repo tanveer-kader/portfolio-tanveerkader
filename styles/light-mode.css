@@ -30,7 +30,7 @@
 /* //////////////////////////////// */
 
 .light-mode {
-  background-color: #fff;
+  background-color: #f3f4f6;
   color: #111827;
 }
 
@@ -39,7 +39,7 @@
 }
 
 .light-mode .card {
-  background-color: #f3f4f6;
+  background-color: #e9ebef;
 }
 
 .light-mode .icon-link svg path {
@@ -51,7 +51,7 @@
 }
 
 .light-mode .header {
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(243, 244, 246, 0.4);
 }
 
 .light-mode .nav-scroll {
@@ -81,6 +81,8 @@
   color: #0e876d;
 }
 
-.light-mode .navbar {
-  background-color: #fff;
+@media (max-width: 59em) {
+  .light-mode .navbar {
+    background-color: #f3f4f6;
+  }
 }
