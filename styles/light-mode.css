@@ -1,3 +1,5 @@
+/*  toggle button */
+
 .btn-theme-change {
   border: none;
   background: none;
@@ -28,19 +30,26 @@
 }
 
 /* //////////////////////////////// */
+/*  general style */
 
 .light-mode {
   background-color: #f3f4f6;
   color: #111827;
 }
 
+/*  paragraphs */
+
 .light-mode p {
   color: #4b5563;
 }
 
+/* cards */
+
 .light-mode .card {
   background-color: #e9ebef;
 }
+
+/* social icons */
 
 .light-mode .icon-link svg path {
   fill: #374151;
@@ -49,6 +58,8 @@
 .light-mode .icon-link:hover svg path {
   fill: #0e876d;
 }
+
+/* navbar */
 
 .light-mode .header {
   background-color: rgba(243, 244, 246, 0.4);
@@ -63,21 +74,24 @@
   color: #111827;
 }
 
-.light-mode .blog-link:link,
-.light-mode .blog-link:visited,
-.light-mode .project-link:link,
-.light-mode .project-link:visited,
+/* all links */
+
+.light-mode .link:link,
+.light-mode .link:visited,
 .light-mode .highlighted-text,
 .icon-mobile-nav {
   color: #1bb896;
 }
 
+.light-mode .title-link:link,
+.light-mode .title-link:visited {
+  color: #111827;
+}
+
 .light-mode .nav-links:hover,
 .light-mode .nav-links:active,
-.light-mode .blog-link:hover,
-.light-mode .blog-link:active,
-.light-mode .project-link:hover,
-.light-mode .project-link:active {
+.light-mode .link:hover,
+.light-mode .link:active {
   color: #0e876d;
 }
 
