@@ -39,6 +39,14 @@ function addborder() {
 }
 
 ///////////////////////////////////////////////////////////
+// theme toggle
+const btntheme = document.querySelector(".btn-theme-change");
+
+btntheme.addEventListener("click", function () {
+  document.body.classList.toggle("light-mode");
+});
+
+///////////////////////////////////////////////////////////
 // sticky navigation
 
 // window.onscroll = function () {
