@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.3rem #1bb896;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #1b1e28;
+  color: #f3f4f6;
+}
+
+.container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1.6rem;
+}
+
+/*
+Global
+*/
+
+.pt-34 {
+  padding-top: 4.2rem;
+}
+
+.section-title {
+  font-family: "Lora", serif;
+  font-size: 3.2rem;
+  margin-bottom: 3.2rem;
+  text-align: center;
+}
+
+.section-description {
+  font-size: 1.8rem;
+  margin-bottom: 3.2rem;
+  text-align: center;
+  padding-bottom: 2.4rem;
+  border-bottom: 2px solid rgba(156, 163, 175, 0.308);
+}
+
+.section-gap {
+  padding-top: 8.4rem;
+}
+
+.first-section-margin {
+  margin-top: 8.4rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.title {
+  font-family: "Lora", serif;
+  font-size: 2.8rem;
+  letter-spacing: 0.5px;
+}
+
+.description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  color: #d1d5db;
+}
+
+.link:link,
+.link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #50e9c8;
+  transition: all 0.3s;
+}
+
+.title-link:link,
+.title-link:visited {
+  /* color: inherit; */
+  color: #f3f4f6;
+}
+
+.link:hover,
+.link:active {
+  color: #0e876d;
+}
