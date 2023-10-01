@@ -460,6 +460,13 @@ Social links
     /* 3) Hide it from screen readers */
     visibility: hidden;
   }
+
+  .nav-items {
+    flex-direction: column;
+    gap: 4.8rem;
+    align-items: center;
+  }
+
   .nav-open .navbar {
     opacity: 1;
     pointer-events: auto;
@@ -475,11 +482,7 @@ Social links
     display: none;
   }
 
-  .nav-items {
-    flex-direction: column;
-    gap: 4.8rem;
-    align-items: center;
-  }
+  /* btn-theme-change */
 
   .nav-links:link,
   .nav-links:visited {

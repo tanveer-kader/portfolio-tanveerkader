@@ -1,0 +1,86 @@
+.btn-theme-change {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  align-self: flex-end;
+}
+
+.icon-theme-change {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.icon-theme-change[name="moon"] {
+  display: none;
+}
+
+.icon-theme-change[name="sunny"] {
+  color: #f3f4f6;
+}
+
+.light-mode .icon-theme-change[name="moon"] {
+  display: block;
+}
+
+.light-mode .icon-theme-change[name="sunny"] {
+  display: none;
+}
+
+/* //////////////////////////////// */
+
+.light-mode {
+  background-color: #fff;
+  color: #111827;
+}
+
+.light-mode p {
+  color: #4b5563;
+}
+
+.light-mode .card {
+  background-color: #f3f4f6;
+}
+
+.light-mode .icon-link svg path {
+  fill: #374151;
+}
+
+.light-mode .icon-link:hover svg path {
+  fill: #0e876d;
+}
+
+.light-mode .header {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.light-mode .nav-scroll {
+  border-bottom: 0.05px solid rgba(0, 0, 0, 0.07);
+}
+
+.light-mode .nav-links:link,
+.light-mode .nav-links:visited {
+  color: #111827;
+}
+
+.light-mode .blog-link:link,
+.light-mode .blog-link:visited,
+.light-mode .project-link:link,
+.light-mode .project-link:visited,
+.light-mode .highlighted-text,
+.icon-mobile-nav {
+  color: #1bb896;
+}
+
+.light-mode .nav-links:hover,
+.light-mode .nav-links:active,
+.light-mode .blog-link:hover,
+.light-mode .blog-link:active,
+.light-mode .project-link:hover,
+.light-mode .project-link:active {
+  color: #0e876d;
+}
+
+.light-mode .navbar {
+  background-color: #fff;
+}
