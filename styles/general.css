@@ -44,11 +44,14 @@ Global
 }
 
 .section-description {
+  color: #d1d5db;
   font-size: 1.8rem;
   margin-bottom: 3.2rem;
   text-align: center;
   padding-bottom: 2.4rem;
-  border-bottom: 2px solid rgba(156, 163, 175, 0.308);
+  letter-spacing: 0.8px;
+  line-height: 1.4;
+  border-bottom: 2px solid #1f2937;
 }
 
 .section-gap {
