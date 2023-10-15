@@ -16,7 +16,6 @@ btnNavEl.addEventListener("click", function () {
 
 navlinksEL.forEach((navlink) => {
   navlink.addEventListener("click", () => {
-    console.log("cilck");
     navbarEl.classList.remove("nav-open");
   });
 });
@@ -44,6 +43,30 @@ const btntheme = document.querySelector(".btn-theme-change");
 
 btntheme.addEventListener("click", function () {
   document.body.classList.toggle("light-mode");
+});
+
+///////////////////////////////////////////////////////////
+// scroll smooth
+
+const allLinks = document.querySelectorAll("a:link");
+
+allLinks.forEach(function (link) {
+  link.addEventListener("click", function (e) {
+    const href = link.getAttribute("href");
+    if (href.startsWith("#")) {
+      e.preventDefault();
+      if (href === "#")
+        // back to top
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      else {
+        const sectionEl = document.querySelector(href);
+        sectionEl.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  });
 });
 
 ///////////////////////////////////////////////////////////
