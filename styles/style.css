@@ -206,7 +206,8 @@ Social links
   flex-direction: column;
   gap: 20px;
   padding-left: 2rem;
-  border-left: 2px solid #0e876d;
+  /* border-left: 2px solid #0e876d; */
+  border-left: 2px solid #1f2937;
   position: relative;
 }
 
@@ -223,6 +224,7 @@ Social links
   border-radius: 50%;
   background-color: #1f2937;
   border: 2px solid #0e876d;
+  /* border: 2px solid #1f2937; */
 }
 
 .publication-title {
