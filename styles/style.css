@@ -199,6 +199,35 @@ Social links
   height: 25px;
 }
 
+/* Research & Publication */
+
+.publication-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 2rem;
+  border-left: 2px solid #0e876d;
+  position: relative;
+}
+
+/* .publication-item {
+  padding: 0 0 2rem 2rem;
+} */
+
+.publication-item::before {
+  content: "";
+  position: absolute;
+  left: -11px;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background-color: #1f2937;
+  border: 2px solid #0e876d;
+}
+
+.publication-title {
+  color: #9ca3af;
+}
 /* Projects */
 
 .card-stack {
@@ -212,7 +241,8 @@ Social links
   grid-template-columns: 1fr 2fr;
   gap: 2rem;
   /* card difference */
-  border: 0.02px solid rgba(156, 163, 175, 0.308);
+  /* border: 0.02px solid rgba(156, 163, 175, 0.308); */
+  border: 0.02px solid #1f2937;
   border-radius: 5px;
   padding: 2.4rem;
   transition: 0.3s all;
@@ -225,7 +255,7 @@ Social links
 .thumbnails {
   width: 100%;
   height: 100%;
-  border: 0.02px solid rgba(156, 163, 175, 0.308);
+  border: 0.02px solid #1f2937;
   border-radius: 5px;
 }
 
@@ -247,7 +277,8 @@ Social links
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 2rem;
-  border-top: 0.02px solid rgba(156, 163, 175, 0.308);
+  /* border-top: 0.02px solid rgba(156, 163, 175, 0.308); */
+  border-top: 2px solid #1f2937;
   padding: 4.2rem 0;
 }
 
