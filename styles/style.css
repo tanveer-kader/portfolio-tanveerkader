@@ -308,11 +308,11 @@ Social links
 .footer-texts {
   display: flex;
   justify-content: center;
-  gap: 1.2rem;
+  gap: 1.4rem;
 }
 
 .footer-texts p {
-  font-size: 1.8rem;
+  font-size: 1.2rem;
 }
 
 @media (max-width: 59em) {
