@@ -395,3 +395,17 @@ Social links
     font-size: 3rem;
   }
 }
+
+/* About Page Slider */
+
+.swiper {
+  max-height: 40rem;
+  width: auto;
+}
+
+.coverphoto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}

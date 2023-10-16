@@ -43,6 +43,12 @@ Global
   text-align: center;
 }
 
+.underline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .section-description {
   color: #d1d5db;
   font-size: 1.8rem;
