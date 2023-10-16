@@ -227,9 +227,9 @@ Social links
   /* border: 2px solid #1f2937; */
 }
 
-.publication-title {
+/* .publication-title {
   color: #9ca3af;
-}
+} */
 /* Projects */
 
 .card-stack {
@@ -408,4 +408,41 @@ Social links
   height: 100%;
   object-fit: cover;
   border-radius: 5px;
+}
+
+.bullet-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 2rem;
+  /* border-left: 2px solid #0e876d; */
+  border-left: 2px solid #1f2937;
+  position: relative;
+}
+
+/* .publication-item {
+  padding: 0 0 2rem 2rem;
+} */
+
+.bullet-list-item::before {
+  content: "";
+  position: absolute;
+  left: -11px;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background-color: #1f2937;
+  border: 2px solid #0e876d;
+  /* border: 2px solid #1f2937; */
+}
+
+.bullet-list-title {
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+}
+
+.bullet-list-description {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  color: #d1d5db;
 }
