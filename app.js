@@ -41,8 +41,17 @@ function addborder() {
 // theme toggle
 const btntheme = document.querySelector(".btn-theme-change");
 
+const html = document.querySelector("html");
+
+let flag = true;
 btntheme.addEventListener("click", function () {
-  document.body.classList.toggle("light-mode");
+  if (flag) {
+    html.setAttribute("data-theme", "theme-light");
+    flag = false;
+  } else {
+    html.setAttribute("data-theme", "theme-dark");
+    flag = true;
+  }
 });
 
 ///////////////////////////////////////////////////////////

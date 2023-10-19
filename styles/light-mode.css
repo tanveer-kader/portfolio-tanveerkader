@@ -18,49 +18,50 @@
 }
 
 .icon-theme-change[name="sunny"] {
-  color: #f3f4f6;
+  /* color: #f3f4f6; */
+  color: var(--text-primary);
 }
 
-.light-mode .icon-theme-change[name="moon"] {
+:root[data-theme="theme-light"] .icon-theme-change[name="moon"] {
   display: block;
 }
 
-.light-mode .icon-theme-change[name="sunny"] {
+:root[data-theme="theme-light"] .icon-theme-change[name="sunny"] {
   display: none;
 }
 
 /* //////////////////////////////// */
 /*  general style */
 
-.light-mode {
+/* .light-mode {
   background-color: #f3f4f6;
   color: #111827;
-}
+} */
 
 /*  paragraphs */
 
-.light-mode p {
+/* .light-mode p {
   color: #4b5563;
-}
+} */
 
 /* cards */
-
+/* 
 .light-mode .card {
   background-color: #e9ebef;
-}
+} */
 
 /* social icons */
-
+/* 
 .light-mode .icon-link svg path {
   fill: #374151;
 }
 
 .light-mode .icon-link:hover svg path {
   fill: #0e876d;
-}
+} */
 
 /* navbar */
-
+/* 
 .light-mode .header {
   background-color: rgba(243, 244, 246, 0.4);
 }
@@ -72,10 +73,10 @@
 .light-mode .nav-links:link,
 .light-mode .nav-links:visited {
   color: #111827;
-}
+} */
 
 /* all links */
-
+/* 
 .light-mode .link:link,
 .light-mode .link:visited,
 .light-mode .highlighted-text,
@@ -99,4 +100,4 @@
   .light-mode .navbar {
     background-color: #f3f4f6;
   }
-}
+} */
