@@ -399,8 +399,27 @@ Social links
 /* About Page Slider */
 
 .swiper {
-  max-height: 40rem;
+  /* max-height: 40rem; */
   width: auto;
+}
+
+/* swiper slider buttons */
+.swiper-button-prev,
+.swiper-button-next {
+  background-color: #1f2937;
+  padding: 2.4rem;
+  border-radius: 50%;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  color: #0e876d;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #0e876d;
 }
 
 .coverphoto {
@@ -409,6 +428,8 @@ Social links
   object-fit: cover;
   border-radius: 5px;
 }
+
+/* bullet list  */
 
 .bullet-list {
   display: flex;
