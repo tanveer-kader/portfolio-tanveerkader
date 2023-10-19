@@ -12,14 +12,15 @@
       rel="stylesheet"
     />
     <link rel="shortcut icon" type="image/jpg" href="icons/fabicon.png" />
-    <link rel="stylesheet" href="styles/general.css" />
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/light-mode.css" />
     <!-- Link Swiper's CSS -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/light-mode.css" />
+
     <script defer src="app.js"></script>
     <title>Tanveer Kader - About</title>
   </head>
@@ -71,6 +72,8 @@
             />
           </figure>
         </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
         <div class="swiper-pagination"></div>
       </div>
       <p class="hero-description">
@@ -436,9 +439,21 @@
     <!-- Initialize Swiper -->
     <script>
       var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
         pagination: {
           el: ".swiper-pagination",
-          dynamicBullets: true,
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         },
       });
     </script>
